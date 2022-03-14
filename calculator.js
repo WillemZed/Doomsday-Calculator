@@ -39,6 +39,7 @@ function makeLabelInputSubmit(calculatorDiv) {
 
 	// create text input
 	txt.id = "userInput";
+	txt.placeholder = "DD/MM/YYYY";
 
 	calculatorDiv.appendChild(label);
 	calculatorDiv.appendChild(txt);
@@ -165,7 +166,7 @@ function calculateDate(month, day, yearLeap, yearInput) {
 			"the negative number has been turn into a positive number:" + sum
 		);
 		console.log(sum + " - 7 = ");
-		sum = sum - 7;
+		sum = 7 - sum;
 		console.log(sum);
 	}
 	if (sum > 7) {
